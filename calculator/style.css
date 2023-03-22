@@ -1,0 +1,138 @@
+.container{
+    height:100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0, 0, 0.4);
+}
+input{
+    display: grid;
+    grid-column: span 4;
+    height: 100px;
+    width: 260px;
+    border-radius: 10px;
+    background: black;
+    color: azure;
+    font-size: xx-large;
+    text-align: end;
+
+}
+.calculator{
+    display: grid;
+    grid-template-columns: repeat(4,2fr);
+    border: 1px solid #565135  ;
+    border-radius: 27px;
+    padding: 12px;
+    height: 450px;
+    background: black;
+    box-shadow: 0px -2px 5px 0px #5a5a5a , 0px 2px 5px 2px black;
+    align-items: first baseline;
+}
+button{
+    border-radius: 27px;
+    border: navajowhite ;
+    height: 50px;
+    width: 50px;
+    font-size: x-large;
+
+}
+.first{
+ background: #19d9fd;
+}
+.symbol{
+    background: #fee715;
+}
+header{
+    font-size: 40px;
+   color: aliceblue;
+    text-align: center;
+    font-style: italic;
+}
+button:active{
+    background: #f48037;
+}
+button:hover{
+    transform: translateY(-10px);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+body{
+    min-height: 100vh;
+    background: #0c192c;
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    align-items: center;
+
+
+}
+/*.bubbles
+{
+    position: relative;
+    display: flex;
+}
+.bubbles span
+{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #19d9fd;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #4fc3dc44,
+    0 0 50px #4fc3dc,
+    0 0 100px #4fc3dc;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(125s / var(--i));
+ 
+    
+
+
+}
+.bubbles span:nth-child(even)
+{   
+    
+    background: #ff2d75;
+    box-shadow: 0 0 0 10px #ff2d7544,
+    0 0 50px #ff2d75,
+    0 0 100px #ff2d75;
+}
+
+@keyframes animate
+{
+    0%
+    {
+        transform: translateY(100vh) scale(0);
+    }
+    100%
+    {
+        transform: translateY(-10vh) scale(1);
+    }
+}*/
+.background-clip
+{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+@media(min-aspect-ratio:16/9) {
+    .background-clip{
+        width: 100%;
+        height: auto;
+    }
+    
+}
+@media (max-aspect-ratio:16/9) {
+    .background-clip{
+        height: auto;
+        width: 100%;
+    }
+}
